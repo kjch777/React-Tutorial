@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+}
+
+.home-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.home-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.home-header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.home-header p {
+    font-size: 16px;
+    color: #555;
+}
+
+/***** about section one, two, skills, projects 공통 css 작성 *****/
+.home-about-one, .home-about-two, .home-skills, .home-projects {
+    margin-bottom: 40px;
+}
+
+.home-about-one h2, .home-about-two h2, .home-skills h2, .home-projects h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+
+/***** about section one(사진 X) *****/
+.home-about-one p {
+    font-size: 20px;
+    color: #444;
+}
+
+/***** about section two(사진 O) *****/
+/* about section one, two 가 서로 동일한 css 가질 때는,
+.home-about-one, .home-about-two {
+    동일하게 가질 css 코드 작성
+}
+형식으로 작성해주면 된다.*/
+
+.home-about-two .about-row {
+    display: flex;
+    align-items: center;
+}
+
+.home-about-two .about-image {
+    flex: 1;
+    text-align: center;
+}
+
+.home-about-two .about-image img {
+    max-width: 50%;
+    height: auto;
+    /* 높이(세로) 는 폭(가로) 에 맞춰 자동으로 크기가 조정되게 한다.*/
+
+    border-radius: 10px;
+}
+
+.home-about-two .about-text {
+    flex: 2;
+    padding-left: 20px;
+}
+
+.home-about-two .about-text p {
+    font-size: 14px;
+    color: #444;
+}
+
+/***** home-skills *****/
+.home-skills ul {
+    /* ul 태그 옆에 붙은 . 제거*/
+    list-style-type: none;
+    padding: 0;
+}
+
+.home-skills ul li {
+    background-color: #f7f7f7;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    color: #444;
+}
+
+.home-projects .project-item {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #e4e4e4;
+}
+
+.home-projects .project-item h3 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.home-projects .project-item p {
+    font-size: 25px;
+    color: #444;
+}

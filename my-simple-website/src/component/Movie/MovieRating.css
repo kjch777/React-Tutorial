@@ -1,0 +1,36 @@
+.movie-container {
+    text-align: center;
+}
+
+.movie-contents {
+    display: flex;
+    flex-wrap: wrap; /* div 태그 안에서, 몇 줄이 되더라도 상관없이
+                        여러 줄에 걸쳐 자동으로 줄바꿈이 되도록 설정하는 것이다.*/
+    justify-content: center;
+    gap: 10px; /* 요소들 사이의 간격을 유지 */
+    max-width: 1250px;
+    margin: 0 auto; /* 중앙 정렬 */
+}
+
+.movie {
+    border: 1px solid lightslategray;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    box-shadow: 0 4px 8px lightslategrey;
+}
+
+.movie img {
+    width: 100%; /* 이미지가 movie 클래스의 크기 안에서 100% 만큼 꽉 차게 만들어준다.*/
+    border-radius: 5px;
+}
+
+.movie h2 {
+    font-size: 16px;    
+    margin: 10px 0;
+}
+
+.movie p {
+    margin: 5px 0;
+}

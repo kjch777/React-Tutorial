@@ -1,0 +1,62 @@
+  .tictactoe-container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .tictactoe-grid {
+    display: grid; /* 격자*/
+    grid-template-columns: repeat(3, 100px); /* 한 줄에 3개씩 보이게 설정*/
+    grid-gap: 10px; /* 격자에 상하로 간격 주기*/
+    justify-content: center; /* 컨텐츠를 모두 가운데로 모은 것*/
+  }
+
+  .ttt-grid {
+    display: grid; /* 격자*/
+    grid-template-columns: repeat(4, 100px); /* 한 줄에 4개씩 보이게 설정*/
+    grid-gap: 10px; /* 격자에 상하로 간격 주기*/
+    justify-content: center; /* 컨텐츠를 모두 가운데로 모은 것*/
+  }
+  
+  .tictactoe-button {
+    width: 100px;
+    height: 100px;
+    font-size: 24px;
+    cursor: pointer;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.1s ease, box-shadow 0.3s ease;
+  }
+  
+  .tictactoe-button:hover {
+    background-color: #45a049;
+  }
+  
+  .tictactoe-button:active {
+    background-color: #3e8e41;
+    transform: scale(0.95);
+    box-shadow: 0 5px #666;
+  }
+  
+  .message {
+    font-size: 18px;
+    color: #333;
+    margin-top: 20px;
+  }
+  
+  .ttt-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .ttt-button:hover {
+    background-color: #e53935;
+  }

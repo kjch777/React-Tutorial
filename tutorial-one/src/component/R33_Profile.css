@@ -1,0 +1,33 @@
+.profile-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+input {
+    margin: 20px;
+    display: none;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid lightslategray;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+label {
+    background-color: blue;
+    padding: 5px 10px; /* 첫번째 값 두번째 값(지정해줄 때, 첫번째 값 * 2 하면 대부분 예뻐진다.)*/
+    color: white;
+    border: 1px solid lightslategrey;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer; /* 손가락 모양으로 바뀐다.*/
+}
+
+label:hover {
+    background-color: rgb(27, 170, 218);
+    color: black;
+}
